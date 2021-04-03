@@ -25,6 +25,8 @@ public class MainController {
 	QuizService qService;
 
 	Boolean isSubmitted = false;
+	
+	int numOfQues;
 
 	@GetMapping("/")
 	public String home() {
@@ -32,16 +34,22 @@ public class MainController {
 	}
 
 	@PostMapping("/quiz")
-	public String quiz(@RequestParam String username, Model m, RedirectAttributes ra) {
+	public String quiz(@RequestParam String username,@RequestParam String userNumber, Model m, RedirectAttributes ra) {
 		if (username.equals("")) {
-			ra.addFlashAttribute("warning", "You must enter your name");
+			ra.addFlashAttribute("nameWarning", "You must Enter Your Name");
+			return "redirect:/";
+		}
+		if(userNumber.equals("") || !(userNumber.matches(".*\\d.*"))) {
+			ra.addFlashAttribute("numberWarning","You Must Enter A Valid Number");
 			return "redirect:/";
 		}
 
 		isSubmitted = false;
 		result.setUsername(username);
+		
+		numOfQues = Integer.parseInt(userNumber);
 
-		QuestionForm qForm = qService.getQuestions();
+		QuestionForm qForm = qService.getQuestions(numOfQues);
 		m.addAttribute("qForm", qForm);
 
 		return "quiz.html";
@@ -52,6 +60,8 @@ public class MainController {
 	public String submit(@ModelAttribute QuestionForm qForm, Model m) {
 		if(!isSubmitted) {
 			result.setTotalCorrect(qService.getResult(qForm));
+			result.setTotalWrong(numOfQues-qService.getResult(qForm));
+			result.setTotalAttempt(numOfQues);
 			qService.saveScore(result);
 			isSubmitted = true;
 		}

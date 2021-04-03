@@ -20,9 +20,9 @@
 	<div th:insert="navbar.html :: navbar"></div>
 
 	<!-- Main container -->
-	<div class="main-container container py-5 px-5">
+	<div class="main-container container py-5 px-4">
 
-		<div class="card bg-light text-light py-5 px-5 text-center ">
+		<div class="card bg-light text-light py-5 px-4 text-center mx-auto ">
 			<img th:src="@{/images/pass_fail_160px.png}" alt="image">
 			<h3 class="bg-danger text-center mb-5 p-2">Your Score</h3>
 			<div class="d-flex justify-content-center text-dark">
@@ -37,13 +37,9 @@
 
 			<div class="d-flex justify-content-center text-dark">
 				<p>Total Wrong Answer : &nbsp;&nbsp;</p>
-				<p th:if="${result}" th:text="5-${result.totalCorrect}"></p>
+				<p th:if="${result}" th:text="${result.totalWrong}"></p>
 			</div>
 
-			<!--
-				<a href="/score" class="btn btn-success">View Score Board</a>
-				<a href="/" class="btn btn-success">Back to Home Page</a>
-				  -->
 
 			<div class="d-flix justify-content-center mt-4">
 				<button type="button" th:onclick="window.location.href='/' "

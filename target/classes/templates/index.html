@@ -24,17 +24,17 @@
 			<img th:src="@{/images/test_passed_500px.png}" alt="image">
 		</div>
 		<div class="text-box ">
-			<h3 class="mb-5 text-center shadow p-3 mb-3 bg-body rounded">
+			<h3 class="mb-4 text-center shadow p-3 mb-2 bg-body rounded">
 				Welcome To Mock Test <br> JavaQz.com
 			</h3>
-			<form class="card bg-primary  bg-gradien py-4 px-4" action="/quiz"
-				method="POST">
+			<form class="card bg-primary mb-2 bg-gradien py-3 px-4" action="/quiz" method="POST">
 				<p>Enter Your Name</p>
-				<input type="text" name="username" />
-				<p class="text-danger warning" th:if="${warning}"
-					th:text="${warning}"></p>
-				<button type="submit" class="btn btn-success text-white">Start
-					Quiz</button>
+				<input type="text" class= "text-center" name="username" placeholder="Enter Name"/>
+				<p class="text-danger warning" th:if="${nameWarning}" th:text="${nameWarning}"></p>
+				<p>How Many Questions Do You Need</p>
+				<input type="text" class= "text-center" name="userNumber" placeholder="Enter Number Between 1-10"/>
+				<p class="text-danger warning" th:if="${numberWarning}" th:text="${numberWarning}"></p>
+				<button type="submit" class="btn btn-success text-white">Start-Quiz</button>
 			</form>
 		</div>
 	</div>

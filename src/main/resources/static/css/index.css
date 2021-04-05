@@ -25,7 +25,7 @@ body {
 }
 
 
-@media screen and (min-width:850px){
+@media screen and (min-width:800px){
 	.main-container{
 	grid-template-columns:1fr 1fr;
 	grid-template-rows: 1fr ;
@@ -74,8 +74,8 @@ body {
 }
 
 .card input{
-	margin-bottom: 40px;
-	height: 35px;
+	margin-bottom: 35px;
+	height: 30px;
 }
 
 .warning{

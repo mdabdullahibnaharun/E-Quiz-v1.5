@@ -30,25 +30,38 @@ public class QuizService {
 	@Autowired
 	ResultRepo rRepo;
 
-	//random Questions 
-	public QuestionForm getQuestions() {
+	 int num;
+
+	// random Questions
+	public QuestionForm getQuestions(int userNumber) {
 
 		List<Question> allQues = qRepo.findAll();
 		List<Question> qList = new ArrayList<Question>();
 
+		if (userNumber < 1 || userNumber > allQues.size()) {
+			num = allQues.size()/2;
+			//num = 5;
+		} else {
+			num = userNumber;
+		}
+
 		Random random = new Random();
 
-		for (int i = 0; i < 5; i++) {
-			int rand = random.nextInt(allQues.size());
-			qList.add(allQues.get(rand));
-			allQues.remove(rand);
+		for (int i = 0; i < num; i++) {
+			try {
+				int rand = random.nextInt(allQues.size());
+				qList.add(allQues.get(rand));
+				allQues.remove(rand);
+			} catch (IndexOutOfBoundsException e) {
+				System.out.println(e);
+			}
 		}
 
 		qFrom.setQuestions(qList);
 		return qFrom;
 	}
 
-	//count result
+	// count result
 	public int getResult(QuestionForm qForm) {
 		int correct = 0;
 
@@ -61,23 +74,24 @@ public class QuizService {
 		return correct;
 	}
 
-	//save to DB
+	// save to DB
 	public void saveScore(Result result) {
 
 		Result saveResult = new Result();
 
 		saveResult.setUsername(result.getUsername());
 		saveResult.setTotalCorrect(result.getTotalCorrect());
+		saveResult.setTotalAttempt(result.getTotalAttempt());
+		saveResult.setTotalWrong(result.getTotalWrong());
 
 		rRepo.save(saveResult);
 
 	}
-	
-	//return topper's
-	public List<Result> getTopScore(){
-		List<Result> sList = rRepo.findAll(Sort.by(Sort.Direction.DESC,"totalCorrect"));
+
+	// return topper's
+	public List<Result> getTopScore() {
+		List<Result> sList = rRepo.findAll(Sort.by(Sort.Direction.DESC, "totalCorrect"));
 		return sList;
 	}
-	
 
 }

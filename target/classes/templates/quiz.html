@@ -16,39 +16,46 @@
 
 <body>
 
-	<!--Nav bar-->
+	<!--Navbar-->
 	<div th:insert="navbar.html :: navbar"></div>
 
-	<div class="container py-5 px-5">
-		<h2
-			class="bg-danger text-warning shadow p-3 mb-5 "
-			align="center">Only Select The Correct Answer.</h2>
+	<div class="container py-5 px-4">
+		<h2 class="bg-danger text-warning shadow p-3 mb-4 " align="center">Only
+			Select The Correct Answer.</h2>
 
 		<form action="submit" method="POST" th:object=${qForm}>
-			<div class="ques-box bg-secondary bg-light text-dark border border-1 shadow-sm p-3 mb-5 bg-body rounded" th:each="ques, i: ${qForm.questions}">
-				<p class="title" th:text="${ques.title}"></p>
-
+			<div
+				class="ques-box bg-secondary bg-light text-dark border border-1 shadow-sm p-3 mb-5 bg-body rounded"
+				th:each="ques, i: ${qForm.questions}">
+				<!--  <p class="title" th:text=" ${ques.title}"></p>-->
+				<p class="title" th:text="${'' + {i.index+1} + ' ) ' + {ques.title}}"></p>
 				<div class="option">
-					<input type="radio" th:name="|questions[${i.index}].chose|" th:value="1" />
+					<input type="radio" th:name="|questions[${i.index}].chose|"
+						th:value="1" />
 					<p class="text-success" th:text="${ques.optionA}"></p>
 				</div>
 
 				<div class="option">
-					<input type="radio" th:name="|questions[${i.index}].chose|" th:value="2" />
+					<input type="radio" th:name="|questions[${i.index}].chose|"
+						th:value="2" />
 					<p class="text-warning " th:text="${ques.optionB}"></p>
 				</div>
 
 				<div class="option">
-					<input type="radio" th:name="|questions[${i.index}].chose|" th:value="3" />
+					<input type="radio" th:name="|questions[${i.index}].chose|"
+						th:value="3" />
 					<p class="text-secondary " th:text="${ques.optionC}"></p>
 				</div>
 
-				<input type="hidden" th:name="|questions[${i.index}].quesId|" th:value="${ques.quesId}" /> 
-				<input type="hidden"th:name="|questions[${i.index}].title|" th:value="${ques.title}" />
-				<input type="hidden" th:name="|questions[${i.index}].ans|" th:value="${ques.ans}" />
+				<input type="hidden" th:name="|questions[${i.index}].quesId|"
+					th:value="${ques.quesId}" /> <input type="hidden"
+					th:name="|questions[${i.index}].title|" th:value="${ques.title}" />
+				<input type="hidden" th:name="|questions[${i.index}].ans|"
+					th:value="${ques.ans}" />
 			</div>
 
-			<button type="submit" class="btn btn-warning d-block mx-auto mt-4">Submit Answer</button>
+			<button type="submit" class="btn btn-warning d-block mx-auto mt-4">Submit
+				Answer</button>
 		</form>
 
 	</div>

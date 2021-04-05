@@ -28,12 +28,18 @@
 		
 		<table class="table table-hover">
 			<tr>
+				<th>Serial No.</th>
 				<th>Name</th>
-				<th>Score</th>
+				<th>Total Attempt</th>
+				<th>Correct Answer</th>
+				<th>Wrong Answer </th>
 			</tr>
-			<tr th:each = "score : ${sList}">
+			<tr th:each = "score, i: ${sList}">
+				<td th:text = "${i.index+1}"></td>
 				<td th:text = "${score.username}"></td>
+				<td th:text = "${score.totalAttempt}"></td>
 				<td th:text = "${score.totalCorrect}"></td>
+				<td th:text = "${score.totalWrong}"></td>
 			</tr>
 			
 		</table>

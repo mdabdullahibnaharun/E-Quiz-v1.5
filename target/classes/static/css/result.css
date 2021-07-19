@@ -12,7 +12,7 @@ body {
 
 
 .main-container{
-	min-height:calc(100vh - 138px);
+	min-height:calc(100vh - 136px);
 	display:flex;
 	flex-direction:column;
 	justify-content:center;

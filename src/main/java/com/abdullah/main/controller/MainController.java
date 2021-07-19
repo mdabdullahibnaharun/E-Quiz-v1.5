@@ -58,9 +58,12 @@ public class MainController {
 	
 	@PostMapping("/submit")
 	public String submit(@ModelAttribute QuestionForm qForm, Model m) {
+		
+		numOfQues = qService.getNumQs();
+		
 		if(!isSubmitted) {
 			result.setTotalCorrect(qService.getResult(qForm));
-			result.setTotalWrong(numOfQues-qService.getResult(qForm));
+			result.setTotalWrong(Math.abs(numOfQues-qService.getResult(qForm)));
 			result.setTotalAttempt(numOfQues);
 			qService.saveScore(result);
 			isSubmitted = true;

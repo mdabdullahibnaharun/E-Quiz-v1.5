@@ -30,17 +30,19 @@ public class QuizService {
 	@Autowired
 	ResultRepo rRepo;
 
-	 int num;
+	private int num = 5;
 
 	// random Questions
 	public QuestionForm getQuestions(int userNumber) {
+		
+		
 
 		List<Question> allQues = qRepo.findAll();
 		List<Question> qList = new ArrayList<Question>();
 
 		if (userNumber < 1 || userNumber > allQues.size()) {
 			num = allQues.size()/2;
-			//num = 5;
+			
 		} else {
 			num = userNumber;
 		}
@@ -92,6 +94,14 @@ public class QuizService {
 	public List<Result> getTopScore() {
 		List<Result> sList = rRepo.findAll(Sort.by(Sort.Direction.DESC, "totalCorrect"));
 		return sList;
+	}
+	
+	public int  getNumQs() {
+		return num;
+	}
+	
+	public void  settNumQs(int num) {
+		this.num = num;
 	}
 
 }

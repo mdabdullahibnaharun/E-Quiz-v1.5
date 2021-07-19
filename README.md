@@ -14,8 +14,9 @@ Its a web application through which a  user can take a quiz on Java online and v
 ![image](https://user-images.githubusercontent.com/60839928/126134921-4b2d964b-5ca9-4fdd-834a-920f0b57bd9e.png)
 
 ------------
+------------
 
-![image](https://user-images.githubusercontent.com/60839928/126135006-55c4318a-3f83-403b-89a0-de65ef1bccdc.png)
+![image](https://user-images.githubusercontent.com/60839928/126135816-ec67cee2-c5cd-4c07-95cd-b3f2e67d4efe.png)
 
 # Result Page
 
@@ -30,6 +31,7 @@ Its a web application through which a  user can take a quiz on Java online and v
 ![JavaQz Use Case Diagram ](https://user-images.githubusercontent.com/63856744/114263563-15bc2600-9a08-11eb-95c1-df844ee7bfe7.png)
 
 # UML Model 
+
 ![JavaQz UML Model](https://user-images.githubusercontent.com/63856744/114263590-4f8d2c80-9a08-11eb-80da-3899ee29ced3.png)
 
 # Implemented Software 

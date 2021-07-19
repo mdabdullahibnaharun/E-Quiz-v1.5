@@ -24,7 +24,7 @@ Its a web application through which a  user can take a quiz on Java online and v
 
 # Leaderboard
 
-![image](https://user-images.githubusercontent.com/60839928/126135408-8f9c9624-aa75-4565-b608-ceaaf95a0e47.png)
+![image](https://user-images.githubusercontent.com/60839928/126137884-7f0a075c-ca5a-47f5-b463-94029baf096b.png)
 
 # Use Case Diagram 
 
@@ -49,16 +49,14 @@ Database – MySql Workbench 8.0(Spring Data Jpa)
 
 Front-end: HTML,CSS,Thymeleaf
 
-Back-end: Java 1.8
 # DataBase Connection 
 # Question Table 
 
-![question_dbms](https://user-images.githubusercontent.com/63856744/114265063-7ea79c00-9a10-11eb-9906-d27dc50e77cc.png)
+![image](https://user-images.githubusercontent.com/60839928/126137517-2fc11d78-59fd-4ca8-9417-c47e991f52df.png)
 
 # Leaderboard Table
 
-![Leaderboard_dbms](https://user-images.githubusercontent.com/63856744/114265088-a991f000-9a10-11eb-8f6f-81425e40eb17.png)
-
+![image](https://user-images.githubusercontent.com/60839928/126137985-8ade869d-51f1-47af-bfe1-b98fd082ff7b.png)
 
 # Future Update 
 
@@ -79,15 +77,7 @@ Back-end: Java 1.8
 •	Faced Some Little bugs.
 
 # Conclusion 
-This was a great experience doing this project. This project was intended to make the quiz web application system easier and reliable. I hope the intention of the program gets full filled. It will greatly help the beginners who are suffering in java. The challenges we faced and the learning we have gone through will come in great help in the future.
-
-               
-                                       ~~Thank you for using our web application~~ 
-
-
-
-
-
+This was a great experience doing this project. This project was intended to make the quiz web application system easier and reliable. I hope the intention of the program gets full filled. It will greatly help the beginners who are suffering in java. This will come in great help in the future.
 
 
 

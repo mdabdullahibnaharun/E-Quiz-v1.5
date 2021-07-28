@@ -81,9 +81,7 @@ This was a great experience doing this project. This project was intended to mak
 
 
 
-JavaQz v1.5 © Md. Abdullah Ibna Harun
-
-©2021 Md. Abdullah Ibna Harun . All rights reserved
+©2021 Md. Abdullah Ibna Harun. All rights reserved
 
 
 

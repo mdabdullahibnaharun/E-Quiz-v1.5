@@ -10,7 +10,7 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 <link rel="stylesheet" th:href="@{/css/index.css}">
-<title>JavaQz</title>
+<title>E-Quiz</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 		</div>
 		<div class="text-box ">
 			<h3 class="mb-4 text-center shadow p-3 mb-2 bg-body rounded">
-				Welcome To Mock Test <br> JavaQz.com
+				Welcome To Mock Test <br> E-Quiz.com
 			</h3>
 			<form class="card bg-primary mb-2 bg-gradien py-3 px-4" action="/quiz" method="POST">
 				<p>Enter Your Name</p>
@@ -34,6 +34,10 @@
 				<p>How Many Questions Do You Need</p>
 				<input type="text" class= "text-center" name="userNumber" placeholder="Enter Number Between 1-10"/>
 				<p class="text-danger warning" th:if="${numberWarning}" th:text="${numberWarning}"></p>
+				
+				
+				<!-- new functions -->
+				
 				<button type="submit" class="btn btn-success text-white">Start-Quiz</button>
 			</form>
 		</div>

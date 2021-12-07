@@ -38,7 +38,11 @@ public class QuizService {
 		
 
 		List<Question> allQues = qRepo.findAll();
+		
+		///// function
+		
 		List<Question> qList = new ArrayList<Question>();
+		
 
 		if (userNumber < 1 || userNumber > allQues.size()) {
 			num = allQues.size()/2;

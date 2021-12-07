@@ -43,13 +43,21 @@ public class MainController {
 			ra.addFlashAttribute("numberWarning","You Must Enter A Valid Number");
 			return "redirect:/";
 		}
+		
+		numOfQues = Integer.parseInt(userNumber);
+		
+		if(numOfQues>10 || numOfQues <1) {
+			ra.addFlashAttribute("numberWarning","You Must Chose Between 1-10");
+			return "redirect:/";
+		}
+		
 
 		isSubmitted = false;
 		result.setUsername(username);
 		
 		numOfQues = Integer.parseInt(userNumber);
 
-		QuestionForm qForm = qService.getQuestions(numOfQues);
+		QuestionForm qForm = qService.getQuestions(numOfQues);// string -> py/java/c
 		m.addAttribute("qForm", qForm);
 
 		return "quiz.html";

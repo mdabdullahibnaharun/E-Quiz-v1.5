@@ -1,43 +1,40 @@
-## JavaQz
+# E-Quiz Portal
 
 
 Its a web application through which a  user can take a quiz on Java online and verify himself. It will work as like a mock test before a test.
 
-# Project Name :  JavaQz v1.5
+# Project Name :  E-Quiz v1.5
 
 # Home Page 
 
-![image](https://user-images.githubusercontent.com/60839928/126134784-ac0f12bf-c1e6-4b1a-b17e-423d15863c57.png)
+![image](https://user-images.githubusercontent.com/60839928/145071555-9330bbdc-8f9f-44a7-a79c-7520ecd413a5.png)
+
 
 # Quiz Page 
 
-![image](https://user-images.githubusercontent.com/60839928/126134921-4b2d964b-5ca9-4fdd-834a-920f0b57bd9e.png)
+![image](https://user-images.githubusercontent.com/60839928/145071913-4f292846-1034-485b-a367-9ee5f45873ed.png)
 
-------------
-------------
-
-![image](https://user-images.githubusercontent.com/60839928/126135816-ec67cee2-c5cd-4c07-95cd-b3f2e67d4efe.png)
 
 # Result Page
 
-![image](https://user-images.githubusercontent.com/60839928/126135076-4048cfc3-f893-4d18-95a5-16d178ea6f1e.png)
+![image](https://user-images.githubusercontent.com/60839928/145072004-7c8a117a-85f3-4164-aeaf-d9d30cf53755.png)
 
 # Leaderboard
 
-![image](https://user-images.githubusercontent.com/60839928/126137884-7f0a075c-ca5a-47f5-b463-94029baf096b.png)
+![image](https://user-images.githubusercontent.com/60839928/145072236-ba5def98-1872-4069-a7dc-a656448be8e9.png)
 
 # Use Case Diagram 
 
-![JavaQz Use Case Diagram ](https://user-images.githubusercontent.com/63856744/114263563-15bc2600-9a08-11eb-95c1-df844ee7bfe7.png)
+![E-Quiz Use Case Diagram ](https://user-images.githubusercontent.com/63856744/114263563-15bc2600-9a08-11eb-95c1-df844ee7bfe7.png)
 
 # UML Model 
 
-![JavaQz UML Model](https://user-images.githubusercontent.com/63856744/114263590-4f8d2c80-9a08-11eb-80da-3899ee29ced3.png)
+![E-Quiz UML Model](https://user-images.githubusercontent.com/63856744/114263590-4f8d2c80-9a08-11eb-80da-3899ee29ced3.png)
 
 # Implemented Software 
 IDE- Spring Tool suite 4 
 
-JDK - Java 16
+JDK - Java 1.8
 
 Framework - Spring Boot 2.4.4 
 

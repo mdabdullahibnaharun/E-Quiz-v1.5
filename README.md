@@ -37,3 +37,34 @@ IDE- Spring Tool suite 4
 JDK - Java 1.8
 
 Framework - Spring Boot 2.4.4 
+
+Server - Tomcat v9.0
+
+Software Design Pattern - MVC 
+
+Database – MySql Workbench 8.0(Spring Data Jpa)
+
+Front-end: HTML,CSS,Thymeleaf
+
+# DataBase Connection 
+# Question Table 
+
+![image](https://user-images.githubusercontent.com/60839928/126137517-2fc11d78-59fd-4ca8-9417-c47e991f52df.png)
+
+# Leaderboard Table
+
+![image](https://user-images.githubusercontent.com/60839928/126137985-8ade869d-51f1-47af-bfe1-b98fd082ff7b.png)
+
+# Future Update 
+•	Host into web server
+•	Separate leaderboard by question size.
+•	Admin Panel
+
+# Challenges Faced 
+•	Faced error into database issue.
+•	Faced not getting any data from user input.
+•	Front end logical issue.
+•	Faced Some Little bugs.
+
+# Conclusion 
+This was a great experience doing this project. This project was intended to make the quiz web application system easier and reliable. I hope the intention of the program gets full filled. It will greatly help the beginners who are suffering in java. This will come in great help in the future.

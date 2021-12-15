@@ -25,11 +25,13 @@ Its a web application through which a  user can take a quiz on Java online and v
 
 # Use Case Diagram 
 
-![E-Quiz Use Case Diagram ](https://user-images.githubusercontent.com/63856744/114263563-15bc2600-9a08-11eb-95c1-df844ee7bfe7.png)
+![EQuiz-usecasedrawio drawio](https://user-images.githubusercontent.com/60839928/146154885-667f7e74-853c-4cc9-a195-9328b1b9d2ea.png)
+
 
 # UML Model 
 
-![E-Quiz UML Model](https://user-images.githubusercontent.com/63856744/114263590-4f8d2c80-9a08-11eb-80da-3899ee29ced3.png)
+![JavaQz V 1 9 umlcd](https://user-images.githubusercontent.com/60839928/146155763-8cdec38a-4a07-4140-bc14-61900ddfb986.png)
+
 
 # Implemented Software 
 IDE- Spring Tool suite 4 
